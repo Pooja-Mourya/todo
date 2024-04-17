@@ -1,3 +1,51 @@
+# todoapp
+
+## about project 
+These applications typically allow users to create lists of tasks, and implement auth systems like LoginScreen, and RegisterScreen (CreateUser), Users can delete, and update their data list. I implement Firebase authentication, the Home page will show all your created doto lists, todo screen create a todo list feature and the last user screen will show user details 
+
+## Project Structure 
+
+├── src
+├── assets                                                                 
+├── component                                    # Project Dir
+│   ├── CustomButton                                    
+│   ├── CustomHeader                                
+│   ├── CustomInput                               
+│   ├── CustomInput                                  
+│                                 
+├── screen                                      # App Dir (Assembly & Manufacturing)
+│   ├── auth                               
+│   ├── todo                                   
+│   ├── CreateUser                                    
+│   ├── Footer                                   
+│   ├── LoginScreen                                 
+│   │── SplashScreen                                 
+│   ├── Todo                                 
+│   ├── User
+
+
+## project dependencies
+
+"dependencies": {
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@react-native-community/masked-view": "^0.1.11",
+    "@react-native-firebase/app": "^19.2.2",
+    "@react-native-firebase/auth": "^19.2.2",
+    "@react-native-google-signin/google-signin": "^11.0.1",
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.28",
+    "react": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-gesture-handler": "^2.16.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-reanimated": "^3.8.1",
+    "react-native-safe-area-context": "^4.9.0",
+    "react-native-screens": "^3.30.1",
+    "react-native-vector-icons": "^10.0.3",
+    "react-navigation": "^5.0.0"
+  },
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
