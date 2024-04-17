@@ -91,7 +91,7 @@ const Home = ({navigation}) => {
                     <FontAwesome
                       name="trash"
                       size={24}
-                      color={Colors.primary}
+                      color={Colors.primary}    
                     />
                   </TouchableOpacity>
                 </View>
