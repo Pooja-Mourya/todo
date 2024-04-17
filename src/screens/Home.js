@@ -103,19 +103,7 @@ const Home = ({navigation}) => {
         />
       </View>
       <TouchableOpacity
-        style={{
-          borderWidth: 1,
-          borderColor: Colors.primary,
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: 70,
-          position: 'absolute',
-          top: 430,
-          right: 15,
-          height: 70,
-          backgroundColor: Colors.secondary,
-          borderRadius: 100,
-        }}
+        style={styles.floatButton}
         onPress={handleInviteTodo}>
         <SimpleLineIcons name={"user-follow"} color={'white'} size={20}/>
       </TouchableOpacity>
@@ -160,6 +148,20 @@ const styles = StyleSheet.create({
   iconButton: {
     paddingHorizontal: 8,
   },
+  floatButton:{
+    borderWidth: 1,
+    borderColor: Colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 70,
+    position: 'absolute',
+    bottom:15,
+    right: 15,
+    top:0,
+    height: 70,
+    backgroundColor: Colors.secondary,
+    borderRadius: 100,
+  }
 });
 
 export default Home;

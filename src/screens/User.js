@@ -95,7 +95,14 @@
 // export default User;
 
 import React, {useState, useEffect} from 'react';
-import {View, Text, Alert, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  Alert,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import CustomButton from '../components/CustomButton';
 import CustomHeader from '../components/CustomHeader';
 import {Colors} from '../assets/Colors';
@@ -139,9 +146,7 @@ function User({navigation}) {
         <Image source={require('../assets/team.png')} style={styles.img} />
         <Text style={styles.textS}>Welcome to the User Screen</Text>
         <CustomButton title={'Logout'} onPress={handleLogout} />
-      </View>
-     
-      <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity style={styles.registerButton}>
           <Text
             style={styles.registerText}
             onPress={() => navigation.navigate('Register')}>
@@ -155,7 +160,7 @@ function User({navigation}) {
             if you have user account login
           </Text>
         </TouchableOpacity>
-      
+      </View>
     </>
   );
 }
@@ -166,18 +171,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: Colors.backGround,
     paddingHorizontal: 20,
-    alignContent:'center'
+    alignContent: 'center',
   },
   textS: {
     fontSize: 20,
     color: Colors.primary,
   },
-  img: {width: 100, height: 100 },
+  img: {width: 100, height: 100},
   registerText: {
     fontSize: 20,
     color: Colors.secondary,
     fontWeight: 'bold',
     textTransform: 'capitalize',
+  },
+  registerButton: {
+    alignSelf: 'center',
+    marginVertical: 25,
   },
 });
 
