@@ -1,3 +1,29 @@
+# todoapp
+
+## about project 
+These applications typically allow users to create lists of tasks, and implement auth systems like LoginScreen, and RegisterScreen (CreateUser), Users can delete, and update their data list. I implement Firebase authentication, the Home page will show all your created doto lists, todo screen create a todo list feature and the last user screen will show user details 
+
+## Project Structure 
+
+├── src
+├── assets                                                                 
+├── component                                    # Project Dir
+│   ├── CustomButton                                    
+│   ├── CustomHeader                                
+│   ├── CustomInput                               
+│   ├── CustomInput                                  
+│                                 
+├── screen                                      # App Dir (Assembly & Manufacturing)
+│   ├── auth                               
+│   ├── todo                                   
+│   ├── CreateUser                                    
+│   ├── Footer                                   
+│   ├── LoginScreen                                 
+│   │── SplashScreen                                 
+│   ├── Todo                                 
+│   ├── User
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
